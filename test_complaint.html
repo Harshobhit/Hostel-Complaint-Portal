@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>complaint form</title>
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 		 <link rel="stylesheet" href="External/bootstrap.css">
+		<script src="External/jquery2.js"></script>
+		<script src="External/bootstrap.js"></script>  
+		<link rel="stylesheet" href="External/material.css">
+		<link rel="stylesheet" href="External/materialize.css">
+		<script type="text/javascript" src="External/jquery.js"></script>           
+		<script src="External/materialize.js"></script> 
+	<style type="text/css">
+	ul {
+    		list-style-type: none;
+    		margin: 0;
+		    padding: 0;
+		    width: 100px;
+		    background-color: #f1f1f1;
+		}
+
+	li a {
+	    display: block;
+	    color: #000;
+	    padding: 8px 16px;
+	    text-decoration: none;
+	}
+	li a:hover {
+    	background-color: #ff8c1a;
+    	color: white;
+	}
+	.nav>li>a:hover,
+	.nav>li>a:focus {
+    text-decoration: none;
+    background-color: #cc4400;
+	}
+	.nav-pills>li.active>a:focus{background-color: orange;}
+	.nav-pills > li.active > a {
+   position: relative;
+   border-radius: 4px !important;
+   background-color: orange;
+}
+textarea.tx1{height: 230px;width:65%;}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-sm-7">
+</div>
+<div class="col-sm-5">
+	<b>Behalf of :</b> <label class="radio-inline">
+	      <input type="radio" value="Room"  name ="type" checked>Room
+	    </label>
+	    <label class="radio-inline">
+	      <input type="radio" value="Floor" name="type">Floor
+	    </label>  
+	<div style="width:100%">
+		<div class="container" style="float:left;width:25%;height:260px;" >	
+			<ul class="nav nav-pills nav-stacked">
+			  <li><a data-toggle="pill" href="#Electricity">Electricity</a></li>
+			  <li><a data-toggle="pill" href="#AC">A/C</a></li>
+			  <li><a data-toggle="pill" href="#Washroom">Washroom</a></li>
+			  <li><a data-toggle="pill" href="#WaterC">Water Cooler</a></li>
+			  <li><a data-toggle="pill" href="#Repair">Repair</a></li>
+			  <li><a data-toggle="pill" href="#Clean">Cleaning</a></li>
+			</ul>
+		</div>
+		<div class="form-group" style="width:75%;height:260px">
+			<div class="tab-content" >
+			<label name="area">Complaint:</label>
+			<div id="Electrcity" class="tab-pane fade in active" >
+		      <textarea class="tx1" name="Electrcity" ></textarea>
+		    </div>
+			<div id="AC" class="tab-pane fade" >
+		      <textarea class="tx1" name="AC"></textarea>
+		    </div>
+		    <div id="Washroom" class="tab-pane fade" >
+		      <textarea class="tx1" name="Washroom"></textarea>
+		    </div>
+		    <div id="WaterC" class="tab-pane fade">
+		      <textarea class="tx1" name="WaterC"></textarea>
+		    </div>
+		    <div id="Repair" class="tab-pane fade">
+		      <textarea class="tx1" name="Repair" ></textarea>
+		    </div>
+		    <div id="Clean" class="tab-pane fade">
+		      <textarea class="tx1" name="Clean"></textarea>
+		    </div>
+	  	</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</body>
+</html>

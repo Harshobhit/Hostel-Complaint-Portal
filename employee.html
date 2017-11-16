@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Register Employee</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <link rel="stylesheet" href="External/bootstrap.css">
+		<script src="External/jquery2.js"></script>
+		<script src="External/bootstrap.js"></script>  
+		<link rel="stylesheet" href="External/material.css">
+		<link rel="stylesheet" href="External/materialize.css">
+		<script type="text/javascript" src="External/jquery.js"></script>           
+		<script src="External/materialize.js"></script> 
+        <script>
+         $(document).ready(function() {
+         $("select").material_select();
+      });</script>
+</head>
+<body>
+      <div class="navbar-fixed">
+      <nav>
+          <div class="nav-wrapper">
+            <a href="admin_home.php" class="brand-logo" margin="10px">Admin Page</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="admin_home.php"><i class="material-icons left">person_pin</i>Home</a></li>
+              <li><a href="employeedetails.php"><i class="material-icons left">list</i>Employee Details</a></li>
+              <li><a href="admin.php"><i class="material-icons left">error_outline</i>Unsolved Complaints</a></li>
+            </ul>
+          </div>
+      </nav>
+      </div>
+        <div style="padding-left:100px;padding-right:100px;padding-bottom:10px">
+            <h1>Employee Sign Up</h1>
+            <form action="employee_login.php">
+            <label><b>Name</b></label>
+            <input  type="text" placeholder="Enter Name" name="name" required>
+            <br>
+            <label><b>Employee Id</b></label>
+            <input  type="text" placeholder="Enter Employee Id" name="emp_id" required>
+            <br>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required> 
+            <br>
+            <label><b>Block</b></label>
+            <select name="block" required>
+            <option>Block A</option>
+            <option>Block B -Boys</option>
+            <option>Block B -Girls</option>
+            <option>Block C</option>
+            </select>
+            <br>
+            <label><b>Category</b></label>
+            <input  type="text" placeholder="Enter Category" name="category" required>
+            <br>
+            <button type="submit">Sign Up</button>
+            <button type="reset" class="cancelbtn2" >Clear</button>
+            </form>
+      </div>
+</body>
+</html>
